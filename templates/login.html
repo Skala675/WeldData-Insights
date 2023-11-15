@@ -1,0 +1,44 @@
+{% extends "index.html" %}
+
+{% block title %}
+    Login
+{% endblock %}
+
+{% block main %}
+<main class="sessions" id="menu">
+    <section id="login">
+        {% if get_flashed_messages() %}
+        <header>
+            <div class="alert alert-primary mb-0 text-center messages" role="alert">
+                {{ get_flashed_messages() | join(" ") }}
+            </div>
+        </header>
+        {% endif %}        
+        <div class="card">
+            <div class="card-header">
+                <h1 id="loginh1">
+                    MIG/MAG WELDING DATA
+                </h1>
+            </div>    
+            <div class="card-body">
+                <form action="/login"  method="post" id="loginform">
+                    <div>
+                        <input name="username" type="text" placeholder="username" autocomplete="off">
+                    </div>
+                    <div>
+                        <input name="password" type="password" placeholder="password">
+                    </div>
+                    <div>
+                        <button type="submit" class="btn btn-primary">Log In</button>
+                    </div>
+                </form>
+            </div>
+            <div class="card-footer text-muted">
+                <footer id="loginfooter">
+                    Made by <a href="#">Victor Avalos</a>
+                </footer>
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock %}

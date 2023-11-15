@@ -1,0 +1,409 @@
+html {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    width: 100%;
+    background-color: #eee;
+}
+
+/*              LOGIN           */
+
+.sessions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+#login {
+    margin: 0 auto;
+    align-items: center;
+    max-width: 600px;
+    width: 85%;
+}
+
+#loginh1 {
+    font-family: 'Cabin', sans-serif;
+    font-size: 70px;
+    text-align: center;
+}
+
+#login form div {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+#loginform div input {
+    font-size: 20px;
+}
+
+#loginform div button {
+    font-size: 20px;
+}
+
+#loginfooter {
+    margin: 0 auto;
+}
+
+/*              MAIN            */
+
+#menu div {
+    margin: 0;
+}
+
+#search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: darkgray;
+    height: 45px;
+    border-bottom: 2px solid black;
+}
+
+#search label {
+    font-size: 1.3vw;
+}
+
+#search input {
+    margin-left: 4px;
+    margin-right: 4px;
+    height: 24.8px;
+    width: 15%;
+}
+
+#search select {
+    margin-right: 4px;
+    width: 7%;
+}
+
+#search button {
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8%;
+    font-size: 1.6vw;
+    border: 1px solid black;
+}
+
+@media screen and (min-width: 1280px) {
+    #search label {
+        font-size: 16px;
+    }
+    #search button {
+        font-size: 20px;
+    }
+}
+
+.graph-header {
+    margin: 0;
+}
+
+.list-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; 
+}
+
+#parameter {
+    margin-left: auto;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+}
+
+#graph-body {
+    height: 450px;
+    padding: 0;
+}
+
+#graph-footer {
+    margin: 0;
+}
+
+#list-body {
+    height: 450px;
+    overflow-y: auto; 
+    padding: 0;
+}
+
+.bottom-body {
+    overflow-x: auto;
+    padding: 0;
+}
+
+#critic-header {
+    margin: 0;
+    font-size: 18px;
+}
+
+#limit-name {
+    width: 50%;
+}
+
+#graph-button {
+    width: 100%;
+    border: 1px solid black;
+}
+
+#critics-body {
+    height: 204px;
+}
+
+.parameter-limit {
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    text-align: center;
+    width: 100%;
+    appearance: none; 
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+}
+
+.limits-button {
+    width: 100%;
+    border: 1px solid black;
+    height: 100%;
+}
+
+#set-limits {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+h6 {
+    text-align: center;
+}
+
+#limit-name {
+    height: 100%;
+    border: 2px solid #000;
+    border-radius: 10px;
+    background-color: #eee;
+}
+
+.footer-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#extra {
+    height: 160px;
+}
+
+#register {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#register > button{
+    width: 50%;
+}
+
+.messages {
+    height: 100%;
+    padding: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+}
+
+#alarm-footer {
+    height: 18%;
+}
+
+a {
+    width: 50%;
+}
+
+.choose {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.choose > input {
+    width: 20px;
+    height: 20px;
+}
+
+#message {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2vw;
+}
+
+@media screen and (max-width: 768px) {
+    .col-pad {
+        padding-top: 5px;
+    }   
+    #message {
+        font-size: 28px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #menu {
+        height: 100%;
+    }    
+    .booter {
+        padding-right: 0;
+    }
+    #graph {
+        padding-right: 0;
+        height: 100%;
+    }
+    .card {
+        height: 100%;
+    }
+    .card-header {
+        height: 11%;
+        display: flex;
+        align-items: center;
+    }
+    .graph-header {
+        font-size: 2vw;
+    }
+    #graph-footer {
+        font-size: 1.5vw;
+    }
+    #graph-body {
+        height: 89%;
+    }
+    .card-footer {
+        height: 11%;
+        display: flex;
+        align-items: center;
+    }
+    #graph-body > * {
+        height: 100%;
+        width: 100%;
+    }
+    form {
+        height: 100%;
+    }
+    form > .card {
+        height: 89%;
+        max-height: 89%;
+    }
+    form > .card > .card-header {
+        height: 12.35%;
+    }
+    form > .card > .card-body {
+        height: 87.65%;
+    }
+    #button-graph {
+        height: 11%;
+    }
+    #button-graph > * {
+        height: 100%;
+        font-size: 1.7vw;
+    }
+    #body {
+        height: calc(100% - 45px);
+    }
+    
+    #main {
+        height: 70%;
+    }
+    #booter {
+        height: 30%;
+    }    
+    #booter > form {
+        height: 100%;
+    } 
+    #main > div {
+        height: 100%;
+    }
+
+    #critic-header {
+        font-size: 1vw;
+    }
+
+    .parameter-limit {
+        font-size: 1vw;
+    }
+
+    #parameter {
+        font-size: 1.4vw;
+        max-width: 50%;
+    }
+
+    #critics-body {
+        height: 82%;
+    }
+    #critics-body > table {
+        height: 100%;
+        margin: 0;
+    }
+    .footer-header {
+        height: 18%;
+    }
+    .thead {
+        height: 20%;
+    }
+    .tbody {
+        height: 80%;
+    }
+    .tbody tr{
+        height: 25%;
+    }
+    #set-limits {
+        height: 64%;
+    }
+    #set-limits > div{
+        height: 40%;
+    }
+    #set-limits > div > *{
+        height: 80%;
+    }
+    #limit-name {
+        font-size: 1.2vw;
+    }
+    .limits-button {
+        height: 100%;
+        font-size: 1.2vw;
+    }
+    .footer-buttons {
+        height: 18%;
+    }
+    h6 {
+        font-size: 1vw;
+        margin-bottom: 15px;
+    }
+    #extra {
+        height: 82%;
+    }
+    #register {
+        height: 18%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #register > a > button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    a {
+        height: 100%;
+        width: 100%;
+    }
+    #form_limits {
+        height: calc(100% - 27px);
+    }
+    #booter > div:nth-child(-n+3)   {
+        height: 100%;
+    }
+}
