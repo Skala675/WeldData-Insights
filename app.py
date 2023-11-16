@@ -33,8 +33,8 @@ def index():
 
     if request.method == "POST":
 
-        start = '2010-10-10' if not request.form.get("from") else request.form.get("from")
-        end = 'CURRENT_DATE' if not request.form.get("to") else request.form.get("to")
+        start = '2010-10-10' if not request.form.get("from") else request.form.get("from").replace('T', ' ')
+        end = 'CURRENT_DATE' if not request.form.get("to") else request.form.get("to").replace('T', ' ')
         weldpart = None if not request.form.get("weldpart") else request.form.get("weldpart")
         wp = None if not request.form.get("wp") else request.form.get("wp")
         cell = request.form.get("cell")
@@ -266,7 +266,7 @@ def register():
         if not request.form.get("username"):
             flash ("Must provide a username")
             return render_template("register.html")
-            
+
         elif not request.form.get("password"):
             flash ("Must provide password")
             return render_template("register.html")
@@ -382,9 +382,6 @@ def on_created(event):
         try:
             df = get_framework(path, sheet, columns)
             head = get_head(path, sheet)
-
-            # if not pd.isnull(head["Alarm"]):
-                # send_email(head)
 
             export_data(head, df)
 
