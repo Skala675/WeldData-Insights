@@ -150,12 +150,12 @@ def graph():
                             y=[limit['bottom']] * maxLenTime, 
                             mode='lines', 
                             line=dict(color='#FFA500', dash='dash'),
-                            name= 'Bottom limit'))
+                            name= 'Lower limit'))
                 fig.add_trace(go.Scatter(x=maxTime,
                             y=[limit['top']] * maxLenTime, 
                             mode='lines', 
                             line=dict(color='#FFA500', dash='dash'),
-                            name= 'Top limit'))
+                            name= 'Upper limit'))
 
             plot_div = fig.to_html(full_html=False)
 
